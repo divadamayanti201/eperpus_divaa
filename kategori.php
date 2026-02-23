@@ -32,6 +32,25 @@
                                             <?php endif; ?>
                                         </tr>
                                     </tfoot>
+                                     <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>novel</td>
+                                            <td></td>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>roman</td>
+                                            <td></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>History</td>
+                                            <td></td>
+                                            
+                                        </tr>
                                     <tbody>
                                         <?php
                                         $i= 1;
@@ -43,10 +62,15 @@
                                         <tr>
                                             <td><?= $i++; ?></td>
                                             <td><?= $data['nama_kategori']; ?></td>
-                                            <td>Aksi</td>
+                                            <td>
+                                            <a href="?page=kategori_ubah&id=<?= $data['id_kategori']; ?>" class="btn btn-info">ubah</a>
+                                            <a href="?page=kategori_hapus&id=<?= $data['id_kategori']; ?>"  onclick="return confirm('yakin ingin menghapus data ini?')"
+                                            class="btn btn-danger">hapus</a>
+                                        </td>
                                             
                                         </tr>
-                                    </thead>
+                                        <?php endwhile; ?>
+
                                    
                                     
                                     </tbody>

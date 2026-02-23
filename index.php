@@ -71,8 +71,7 @@ session_start();
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#index.php?page=kategori" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+               <a class="nav-link collapsed" href="index.php?page=kategori" data-toggle="collapse" data-target="#collapseTwo">
                     <i class="fas fa-fw fa-tags"></i>
                     <span>Kategori</span>
                 </a>
